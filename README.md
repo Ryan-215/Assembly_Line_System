@@ -4,7 +4,7 @@ The Assembly Line System is a robust C++ application designed to efficiently man
 ## Key Features
 ### Dynamic Order Processing
 The system employs dynamic memory allocation and move semantics to optimize order processing. Memory is allocated at runtime, ensuring flexible and efficient management compared to static allocation. Move semantics further enhance performance by transferring resources (like memory) between objects without unnecessary copying, reducing overhead and improving system efficiency.
-```
+```C++
 // Example code demonstrating dynamic memory allocation and move semantics
 // CustomerOrder constructor
 CustomerOrder::CustomerOrder(const std::string& str) {
@@ -23,7 +23,7 @@ CustomerOrder::CustomerOrder(CustomerOrder&& src) noexcept {
 
 ### Customer Order Handling
 The CustomerOrder class manages and represents customer orders within the system. It stores critical information, including item details and order status, while encapsulating the logic for processing orders, such as filling items and verifying their status.
-```
+```C++
 // Example code demonstrating CustomerOrder class
 class CustomerOrder {
     public:
@@ -43,7 +43,7 @@ class CustomerOrder {
 
 ### Line Management
 The LineManager class manages the flow of orders across workstations in the assembly line. It ensures efficient order processing by coordinating the movement of orders between stations, optimizing the organization and workflow to streamline the overall order fulfillment process.
-```
+```C++
 // Example code demonstrating LineManager class
 class LineManager {
     public:
@@ -63,7 +63,7 @@ class LineManager {
 
 ### Workstation Functionality
 The Workstation class models individual workstations tasked with processing orders and updating inventory. It encapsulates all the operations needed to process orders, including item fulfillment and advancing orders to the next station in the assembly line.
-```
+```C++
 // Example code demonstrating Workstation class
 class Workstation {
     public:
